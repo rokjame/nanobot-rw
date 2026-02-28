@@ -59,7 +59,7 @@ def main():
     # 运行agent循环
     print("开始运行Agent循环...")
     try:
-        agent_loop.run(message=message, tools=tools)
+        agent_loop.run(initial_messages=message, tools=tools)
     except KeyboardInterrupt:
         print("\n用户中断，停止Agent循环")
     except Exception as e:
